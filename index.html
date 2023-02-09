@@ -10,19 +10,23 @@
             display: flex;
             background-color: #DEDEDE;
             flex-direction: column;
+            
          }
         .top-header{
             display: flex;
             justify-content: space-between;
             padding: 15px;
             align-items: center;
+            
         }
         .header-top  .logo{
             margin-left: 1em;
+           
         }
         .top-nav{
             background-color: #c3f38c;
             margin-right: 1em;
+            
         }
         .top-nav>ul {
             display: flex;
@@ -30,17 +34,21 @@
             column-gap: 3em;
             margin: 0px;
             padding: 0 0.2em;
+            
         }
         .top-nav>ul>li {
             list-style: none;
             margin: 0.9em;
+            
         }
-          @media only screen and(min-width: 375px) and (max-width: 1440px) {
+          @media only screen and(min-width: 300px) and (max-width: 1440px) {
             .top-nav {
                 display:flex;
+                overflow: hidden;
             }
             .top-header {
                 padding: 30px;
+                overflow: hidden;
             }
         }
         .content {
@@ -114,6 +122,19 @@
             margin-top: 1em;
 
         }
+        .content3 {
+            width: 960px;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            margin-top: 1em;
+
+        }
+        .video{
+            display: flex;
+            
+            align-self: center;
+        }
         .section-group{
             display: flex;
             margin-top: 1em;
@@ -157,24 +178,7 @@
             border-radius:50%;
             transition: 1s ease;
         }
-        /* .link {
-            
-            margin-right: 1em;
-   }
-
-   .link>ul>li
-   {
-       list-style: none;
-       margin: 0.9em;
-   }
-   .link>ul {
-       display: flex;
-       column-gap: 0.2em;
-       margin: 0px;
-       padding: 0 0.2em;
-   }
- */
-
+      
 
 
   
@@ -215,9 +219,14 @@
 }
 
 @media screen and (max-height: 350px) {
-  .sidenav {padding-top: 5px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {padding-top: 5px; overflow: hidden;}
+  .sidenav a {font-size: 18px; overflow: hidden;}
+  
 }
+
+
+
+
 
     </style> 
     
@@ -349,6 +358,11 @@
 				</div>
 			</div>
         </div>
+        <div class="content3">
+        <div class="video">
+        <iframe width="370" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+        </iframe><iframe width="370" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+        </iframe></div></div>
         <div class="footer">
 			<div class="foter">
 				<center><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Follow Us:</font></font></h2></center>
@@ -356,9 +370,9 @@
                         <li><a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><img src="./image/twitter.png" >Twitter</a></li>
                         <li><a href="https://www.facebook.com/"><img src="./image/facebook.png" >Facebook</a></li>
                         <li><a href="https://wa.me/03110121257?text"><img src="./image/whatsapp-png-image-9.png" width="30px" height="30px">Whatsapp</a></li>
-					<li><a href="#"> <img src="./image/images r.jpg" height="30px" width="30px" > Register</a></li>
-					<li><a href="#"><img src="./image/4051919-middle.png" height="30px" width="30px"> Login</a></li>
-					<li><a href="#"> <img src="./image/2341503.png" height="30px" width="30px"> My account</a></li>
+					    <li><a href="#"> <img src="./image/images r.jpg" height="30px" width="30px" > Register</a></li>
+					    <li><a href="#"><img src="./image/4051919-middle.png" height="30px" width="30px"> Login</a></li>
+					
 				</ul>
 		</div>
            <center><p>© 2023 Mobile Store. All Rights Reserved | Design by Fahad</p></center>
