@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+	background: linear-gradient(90deg, #e1f5c1, #a396f8);		
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.screen {		
+	background: linear-gradient(90deg, #5D54A4, #7C78B8);		
+	position: relative;	
+	height: 600px;
+	width: 360px;	
+	box-shadow: 0px 0px 24px #5C5696;
+}
+
+.screen__content {
+	z-index: 1;
+	position: relative;	
+	height: 100%;
+}
+
+.screen__background {		
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	-webkit-clip-path: inset(0 0 0 0);
+	clip-path: inset(0 0 0 0);	
+}
+
+.screen__background__shape {
+	transform: rotate(45deg);
+	position: absolute;
+}
+
+.screen__background__shape1 {
+	height: 520px;
+	width: 520px;
+	background: rgb(247, 222, 222);	
+	top: -60px;
+	right: 120px;	
+	border-radius: 0 72px 0 0;
+}
+
+
+
+.login {
+	width: 320px;
+	padding: 30px;
+	padding-top: 156px;
+}
+
+.login__field {
+	padding: 20px 0px;	
+	position: relative;	
+}
+
+.login__icon {
+	position: absolute;
+	top: 30px;
+	color: #7875B5;
+}
+
+.login__input {
+	border: none;
+	border-bottom: 2px solid #090975;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+	outline: none;
+	border-bottom-color: #6d33f5;
+}
+
+.login__submit {
+	background: rgb(241, 185, 185);
+	font-size: 14px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #c3c0f5;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: #8d0d1e;
+	/* box-shadow: 0px 2px 2px #caf777; */
+	cursor: pointer;
+	transition: .2s;
+}
+
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+	border-color: #08036e;
+	outline: none;
+}
+
+.button__icon {
+	font-size: 24px;
+	margin-left: auto;
+	color: #153497;
+}
+
+.social-login {	
+	position: absolute;
+	height: 140px;
+	width: 160px;
+	text-align: center;
+	bottom: 0px;
+	right: 0px;
+	color: rgb(82, 24, 24);
+}
+
+.social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-login__icon {
+	padding: 20px 10px;
+	color: rgb(255, 255, 255);
+	text-decoration: none;	
+	text-shadow: 0px 0px 8px #474474;
+}
+
+.social-login__icon:hover {
+	transform: scale(1.5);	
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+                <form class="login">
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="text" class="login__input" placeholder="User name / Email">
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                        <input type="password" class="login__input" placeholder="Password">
+                    </div>
+                    <button class="button login__submit">
+                        <span class="button__text">Log In Now</span>
+                        <i class="button__icon fas fa-chevron-right"></i>
+                    </button>				
+                </form>
+                <div class="social-login">
+                    
+                    <div class="social-icons">
+                        <a href="index.html"><img src="./image/house-top-icon-png-9.jpg" height="28px" width="30px" ></a>
+                        <a href="https://www.instagram.com/" class="social-login__icon fab fa-instagram"> <img src="./image/pngtree-instagram-icon-png-image_6315974.png" height="30px" width="30px" ></a>
+                        <a href="https://www.facebook.com/" class="social-login__icon fab fa-facebook"> <img src="./image/pngtree-facebook-social-media-icon-png-image_6315968.png" height="30px" width="30px"></a>
+                        <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" class="social-login__icon fab fa-twitter"> <img src="./image/twitter.png" height="30px" width="30px" ></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>		
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>		
+        </div>
+       
+    </div>
+</body>
+</html>

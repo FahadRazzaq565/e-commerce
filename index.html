@@ -12,14 +12,14 @@
             flex-direction: column;
             
          }
-        .top-header{
+        /* .top-header{
             display: flex;
             justify-content: space-between;
             padding: 15px;
             align-items: center;
             
         }
-        .header-top  .logo{
+        .sidenav  .logo{
             margin-left: 1em;
            
         }
@@ -40,16 +40,17 @@
             list-style: none;
             margin: 0.9em;
             
-        }
+        }*/
           @media only screen and(min-width: 300px) and (max-width: 1440px) {
-            .top-nav {
+            .sidenav {
                 display:flex;
                 overflow: hidden;
             }
-            .top-header {
-                padding: 30px;
-                overflow: hidden;
-            }
+          
+        } 
+        .sidenav  .logo{
+            margin-left: 1em;
+           
         }
         .content {
             width: 960px;
@@ -246,33 +247,18 @@
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="./about.html">About</a>
-        <a href="#">Services</a>
-        <a href="./contact.html">Contact</a>
-      </div>
-
-
-    <div class="sidenav">
         <div class="logo">
             <img width="70px" src="./image/gradient-mobile-store-logo-design_23-2149699853.avif" alt="">
         </div>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <li><a href="index.html"><img src="./image/house-top-icon-png-9.jpg" height="30px" width="30px" > Home</a></li>
+        <!-- <li><a href="about.html"><img src="./image/about-icon-2.jpg" height="30px" width="30px" > About</a></li> -->
+        <li><a href="contact.html"><img src="./image/phone-call-flat-icon-contact-us-and-website-vector-14597751.jpg" height="30px" width="30px" > Contact</a></li>
+        <!-- <li><a href="#"> <img src="./image/images r.jpg" height="30px" width="30px" > Register</a></li> -->
+        <li><a href="./login.html"><img src="./image/4051919-middle.png" height="30px" width="30px"> Login</a></li>
       </div>
-        <div class="top-header">
-                <div class="logo">
-                    <img width="70px" src="./image/gradient-mobile-store-logo-design_23-2149699853.avif" alt="">
-                </div>
-		<div class="top-nav">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="store.html">Featured</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</div>
-		</div>
+
+
+   
         <div class="content">
             <div class="circle">
 		<div class="banner">
@@ -366,14 +352,15 @@
         <div class="footer">
 			<div class="foter">
 				<center><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Follow Us:</font></font></h2></center>
-                    <ul>
-                        <li><a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><img src="./image/twitter.png" >Twitter</a></li>
-                        <li><a href="https://www.facebook.com/"><img src="./image/facebook.png" >Facebook</a></li>
+                   
+                <ul>
+                        <li><a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" width="30px" height="30px"><img src="./image/twitter.png" >Twitter</a></li>
+                        <li><a href="https://www.facebook.com/"><img src="./image/facebook.png" width="30px" height="30px" >Facebook</a></li>
                         <li><a href="https://wa.me/03110121257?text"><img src="./image/whatsapp-png-image-9.png" width="30px" height="30px">Whatsapp</a></li>
-					    <li><a href="#"> <img src="./image/images r.jpg" height="30px" width="30px" > Register</a></li>
-					    <li><a href="#"><img src="./image/4051919-middle.png" height="30px" width="30px"> Login</a></li>
+					   
 					
 				</ul>
+                
 		</div>
            <center><p>© 2023 Mobile Store. All Rights Reserved | Design by Fahad</p></center>
 		</div>
